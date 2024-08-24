@@ -6,7 +6,7 @@ public class FixedWindowRateLimiter
     private readonly TimeSpan _windowSize;
     private readonly ConcurrentDictionary<string, (int count, DateTime windowStart)> _clients;
 
-    public FixedWindowRateLimiter(int limit, TimeSpan windowSize)
+    public FixedWindowRateLimiter(int limit, TimeSpan windowSize) // 5, 10s
     {
         _limit = limit;
         _windowSize = windowSize;
