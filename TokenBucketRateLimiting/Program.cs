@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading;
+﻿namespace TokenBucketRateLimiting;
 
 public class TokenBucketRateLimiter
 {
