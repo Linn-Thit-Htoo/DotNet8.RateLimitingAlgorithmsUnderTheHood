@@ -37,7 +37,9 @@ public class TokenBucketRateLimiter
 
         if (elapsedTime >= _interval)
         {
-            var tokensToAdd = (int)(elapsedTime.TotalMilliseconds / _interval.TotalMilliseconds) * _tokensPerInterval;
+            var tokensToAdd =
+                (int)(elapsedTime.TotalMilliseconds / _interval.TotalMilliseconds)
+                * _tokensPerInterval;
             _tokens = Math.Min(_bucketCapacity, _tokens + tokensToAdd);
             _lastRefill = now;
         }
