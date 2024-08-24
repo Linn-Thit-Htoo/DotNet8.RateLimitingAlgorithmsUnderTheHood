@@ -3,8 +3,8 @@
 public class LeakyBucketRateLimiter
 {
     private readonly int _bucketCapacity;
-    private readonly int _leakRate;
-    private int _currentFill;
+    private readonly int _leakRate; // request leak per second
+    private int _currentFill; // current number of requests (number of incoming requests)
     private DateTime _lastLeakTime;
 
     public LeakyBucketRateLimiter(int bucketCapacity, int leakRate)
@@ -36,6 +36,7 @@ public class LeakyBucketRateLimiter
         if (elapsedTime >= _leakRate)
         {
             _currentFill = Math.Max(0, _currentFill - elapsedTime / _leakRate);
+            Console.WriteLine(_currentFill);
             _lastLeakTime = now;
         }
     }
@@ -47,7 +48,9 @@ public class Program
     {
         var rateLimiter = new LeakyBucketRateLimiter(5, 1000); // Bucket size 5, leaks 1 request per second
 
-        for (int i = 0; i < 10; i++)
+        // leak out => requests that have been processed
+
+        for (int i = 0; i < 15; i++)
         {
             bool allowed = rateLimiter.IsRequestAllowed();
             Console.WriteLine($"Request {i + 1}: {(allowed ? "Allowed" : "Blocked")}");
