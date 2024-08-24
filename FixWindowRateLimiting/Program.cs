@@ -1,6 +1,4 @@
-﻿using System.Collections.Concurrent;
-
-namespace FixWindowRateLimiting;
+﻿namespace FixWindowRateLimiting;
 
 public class FixedWindowRateLimiter
 {
