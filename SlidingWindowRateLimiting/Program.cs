@@ -1,4 +1,6 @@
-﻿public class SlidingWindowRateLimiter
+﻿namespace SlidingWindowRateLimiting;
+
+public class SlidingWindowRateLimiter
 {
     private readonly int _limit;
     private readonly TimeSpan _windowSize;
@@ -45,7 +47,7 @@ public class Program
         {
             bool allowed = rateLimiter.IsRequestAllowed(clientId);
             Console.WriteLine($"Request {i + 1}: {(allowed ? "Allowed" : "Blocked")}");
-            System.Threading.Thread.Sleep(1000); // Wait 1 second between requests
+            Thread.Sleep(1000); // Wait 1 second between requests
         }
     }
 }
