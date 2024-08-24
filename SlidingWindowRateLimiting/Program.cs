@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
-
-public class SlidingWindowRateLimiter
+﻿public class SlidingWindowRateLimiter
 {
     private readonly int _limit;
     private readonly TimeSpan _windowSize;
