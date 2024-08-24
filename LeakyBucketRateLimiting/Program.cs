@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading;
+﻿namespace LeakyBucketRateLimiting;
 
 public class LeakyBucketRateLimiter
 {
@@ -36,7 +35,7 @@ public class LeakyBucketRateLimiter
 
         if (elapsedTime >= _leakRate)
         {
-            _currentFill = Math.Max(0, _currentFill - (elapsedTime / _leakRate));
+            _currentFill = Math.Max(0, _currentFill - elapsedTime / _leakRate);
             _lastLeakTime = now;
         }
     }
