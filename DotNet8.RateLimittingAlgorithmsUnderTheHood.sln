@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35005.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FixedWindowRateLimiting", "FixedWindowRateLimiting", "{0B3A9E65-B04F-4EEF-B163-635F920FA777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedWindowRateLimiting", "FixedWindowRateLimitting\FixedWindowRateLimiting.csproj", "{097B994B-9750-4884-A1A7-D5149E0E4DC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SlidingWindowRateLimiting", "SlidingWindowRateLimiting", "{8120CD11-B610-4A20-9AFE-425F37F3F48B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingWindowRateLimiting", "SlidingWindowRateLimiting\SlidingWindowRateLimiting.csproj", "{325A7C15-CD38-4F65-A226-5A229F76A2A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TokenBucketRateLimiting", "TokenBucketRateLimiting", "{8CBACD12-BAB3-4BB1-BC00-D6CAA168C97C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBucketRateLimiting", "TokenBucketRateLimiting\TokenBucketRateLimiting.csproj", "{A565A8F8-A17E-46A3-B6BC-7295518A2B34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeakyBucketRateLimiting", "LeakyBucketRateLimiting", "{064988EF-1E15-413F-B6EA-2BA70B395072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeakyBucketRateLimiting", "LeakyBucketRateLimiting\LeakyBucketRateLimiting.csproj", "{1D506B29-E039-4E82-94B3-9146F17BD5E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{097B994B-9750-4884-A1A7-D5149E0E4DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097B994B-9750-4884-A1A7-D5149E0E4DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097B994B-9750-4884-A1A7-D5149E0E4DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097B994B-9750-4884-A1A7-D5149E0E4DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325A7C15-CD38-4F65-A226-5A229F76A2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325A7C15-CD38-4F65-A226-5A229F76A2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325A7C15-CD38-4F65-A226-5A229F76A2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325A7C15-CD38-4F65-A226-5A229F76A2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A565A8F8-A17E-46A3-B6BC-7295518A2B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A565A8F8-A17E-46A3-B6BC-7295518A2B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A565A8F8-A17E-46A3-B6BC-7295518A2B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A565A8F8-A17E-46A3-B6BC-7295518A2B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D506B29-E039-4E82-94B3-9146F17BD5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D506B29-E039-4E82-94B3-9146F17BD5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D506B29-E039-4E82-94B3-9146F17BD5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D506B29-E039-4E82-94B3-9146F17BD5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{097B994B-9750-4884-A1A7-D5149E0E4DC9} = {0B3A9E65-B04F-4EEF-B163-635F920FA777}
+		{325A7C15-CD38-4F65-A226-5A229F76A2A8} = {8120CD11-B610-4A20-9AFE-425F37F3F48B}
+		{A565A8F8-A17E-46A3-B6BC-7295518A2B34} = {8CBACD12-BAB3-4BB1-BC00-D6CAA168C97C}
+		{1D506B29-E039-4E82-94B3-9146F17BD5E0} = {064988EF-1E15-413F-B6EA-2BA70B395072}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A23896DE-F38B-4C07-868F-89D4708DA458}
+	EndGlobalSection
+EndGlobal
